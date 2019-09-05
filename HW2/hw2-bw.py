@@ -16,8 +16,12 @@ def run():
     imagen = cv2.imread('images/'+str(input('Ingresa el nombre de la imagen: '))
     , cv2.IMREAD_GRAYSCALE)
 
+    cv2.imshow('Imagen Original',imagen)
+
     intensidad = int(input('¿Cuánto brillo deseas?: '))
     imagen_brillo = brillo(imagen,intensidad)
+
+    cv2.imshow('Imagen con Brillo',imagen_brillo)
 
     cv2.imwrite('images/'+str(
         input('¿Con cuál nombre quieres guardar la nueva imagen?: '))+
