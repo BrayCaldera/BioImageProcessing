@@ -1,2 +1,7 @@
 venv
 images
+example1.py
+example2.py
+example3.py
+.vscode
+examples
