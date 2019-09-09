@@ -21,7 +21,7 @@ def run():
     intensidad = int(input('¿Cuánto brillo deseas?: '))
     imagen_brillo = brillo(imagen,intensidad)
 
-    cv2.imshow('Imagen con Brillo',imagen_brillo)
+    #cv2.imshow('Imagen con Brillo',imagen_brillo)
 
     cv2.imwrite('images/'+str(
         input('¿Con cuál nombre quieres guardar la nueva imagen?: '))+
