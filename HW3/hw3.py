@@ -1,4 +1,4 @@
-"""Program to load DICOM Files"""
+"""Program to load and plot DICOM Files"""
 
 import matplotlib.pyplot as plt
 import pydicom
