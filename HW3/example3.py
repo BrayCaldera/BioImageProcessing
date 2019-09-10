@@ -4,7 +4,7 @@ from pydicom.data import get_testdata_files
 
 print(__doc__)
 
-filename = 'series-000000/image-000000.dcm'
+filename = 'Anonymized20190910.dcm'
 dataset = pydicom.dcmread(filename)
 
 # Normal mode:
@@ -18,7 +18,7 @@ display_name = pat_name.family_name + ", " + pat_name.given_name
 print("Patient's name...:", display_name)
 print("Patient id.......:", dataset.PatientID)
 print("Modality.........:", dataset.Modality)
-print("Study Date.......:", dataset.StudyDate)
+#print("Study Date.......:", dataset.StudyDate)
 
 if 'PixelData' in dataset:
     rows = int(dataset.Rows)
@@ -32,8 +32,9 @@ if 'PixelData' in dataset:
 print("Slice location...:", dataset.get('SliceLocation', "(missing)"))
 
 # show pixeldata
-print(dataset.PixelData)
+#print(dataset.PixelData)
 
 # plot the image using matplotlib
 plt.imshow(dataset.pixel_array, cmap=plt.cm.bone)
 plt.show()
+

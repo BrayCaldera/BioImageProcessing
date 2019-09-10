@@ -38,5 +38,6 @@ print("Slice location...:", dataset.get('SliceLocation', "(missing)"))
 print(dataset.PixelData)
 
 # plot the image using matplotlib
-plt.imshow(dataset.pixel_array, cmap=plt.cm.bone)
+#plt.imshow(dataset.pixel_array, cmap=plt.cm.bone)
+plt.imshow(dataset.pixel_array)
 plt.show()
