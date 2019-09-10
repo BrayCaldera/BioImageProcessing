@@ -52,9 +52,9 @@ def run():
     imagen_brillo_rojo = brillo_rojo(imagen,intensidad_canal_azul)
 
     nombre_image_nueva=input('¿Con cuál nombre quieres guardar las nuevas imagenes?: ')
-    cv2.imwrite('images/'+nombre_image_nueva+'-azul.jpg', imagen_brillo_azul)
-    cv2.imwrite('images/'+nombre_image_nueva+'-verde.jpg', imagen_brillo_verde)
-    cv2.imwrite('images/'+nombre_image_nueva+'-rojo.jpg', imagen_brillo_rojo)
+    cv2.imwrite('images/'+nombre_image_nueva+'-blue.jpg', imagen_brillo_azul)
+    cv2.imwrite('images/'+nombre_image_nueva+'-green.jpg', imagen_brillo_verde)
+    cv2.imwrite('images/'+nombre_image_nueva+'-red.jpg', imagen_brillo_rojo)
 
 if __name__=='__main__':
     run()
