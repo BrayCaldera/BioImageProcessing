@@ -31,6 +31,9 @@ if 'PixelData' in dataset:
 # use .get() if not sure the item exists, and want a default value if missing
 print("Slice location...:", dataset.get('SliceLocation', "(missing)"))
 
+# show pixeldata
+print(dataset.PixelData)
+
 # plot the image using matplotlib
 plt.imshow(dataset.pixel_array, cmap=plt.cm.bone)
 plt.show()
