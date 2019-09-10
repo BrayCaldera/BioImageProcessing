@@ -1,2 +1,2 @@
 # BioImageProcessing
-Ejemplos de procesamiento de bioimágenes médicas con python37 y opencv.
+Ejemplos de procesamiento de bioimágenes médicas, utilizando diversas librerías, tales como opencv y pydicom.
