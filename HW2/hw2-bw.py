@@ -1,4 +1,4 @@
-"""Programa para """
+"""Programa para realizar el cambio de brillo en imagenes BW"""
 
 import cv2
 
