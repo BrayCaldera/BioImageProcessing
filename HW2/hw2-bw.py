@@ -1,7 +1,9 @@
+"""Programa para """
+
 import cv2
 
 def brillo(imagen,valor_intensidad):
-
+    """Función para aumentar el brillo de una imagen BW pixel por pixel"""
     for i in range(0, imagen.shape[0]):
         for j in range(0, imagen.shape[1]):
             a = imagen[i,j]
