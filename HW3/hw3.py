@@ -31,14 +31,20 @@ def print_dataset_details(filename,dataset):
     # use .get() if not sure the item exists, and want a default value if missing
     print("Slice location...:", dataset.get('SliceLocation', "(missing)"))
 
+    # show pixeldata
+    # print(dataset.PixelData)
+
 def plot_dcm_image(dataset):
     # plot the image using matplotlib
     plt.imshow(dataset.pixel_array, cmap=plt.cm.bone)
+    # plt.imshow(dataset.pixel_array, [])
     plt.show()
+    # 
 
 
 if __name__=='__main__':
     filename = 'Anonymized20190910.dcm'
+    # filename = 'series-000000/image-000000.dcm'
     dataset = load_dcm(filename)
     print_dataset_details(filename,dataset)
     plot_dcm_image(dataset)
