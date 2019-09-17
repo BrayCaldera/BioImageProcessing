@@ -1,0 +1,1 @@
+""""Se btendrá un histograma de los pixeles de una imagen Dicom"""
