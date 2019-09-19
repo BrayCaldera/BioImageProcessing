@@ -31,7 +31,7 @@ def print_dataset_details(filename,dataset):
     print("Slice location...:", dataset.get('SliceLocation', "(missing)"))
 
     # show pixeldata
-    # print(dataset.PixelData)
+    print(dataset.PixelData)
 
 def plot_dcm_image(dataset):
     # plot the image using matplotlib
