@@ -5,19 +5,20 @@
 
 clc; clear all; close all;
 
+tic
+
 dicom_image = dicomread('image-000010.dcm');
 figure
-imshow(dicom_image,[]);
-
+imshow(dicom_image,[]); % Mostrar imagen DICOM
 [M,I] = max(dicom_image(:));
-
 histogram_vector=zeros(1,M+1);
 rango_vector = linspace(0,double(M),double(M)+1);
 
-for i = 1:length(dicom_image)
+for i = 1:length(dicom_image) % Pixelwise operation
     for j = 1:length(dicom_image)
         pixel = dicom_image(i,j);
-        for x = 1:length(rango_vector)
+        for x = 1:length(rango_vector) % Ciclo para contar los valores
+                                       % de cada pixel y guardarlos
             if (pixel==rango_vector(x))
                histogram_vector(x)=histogram_vector(x)+1; 
             end
@@ -25,14 +26,16 @@ for i = 1:length(dicom_image)
     end
 end
 
-figure
-bar(rango_vector,histogram_vector)
-title('Histograma de una imagen DICOM')
-xlabel('Posición')
-ylabel('Cantidad')
+figure % Figura que muestra el histograma completo
+bar(rango_vector,histogram_vector) % Plotear en modo barra
+title('Histograma de una imagen DICOM') % Título
+xlabel('Posición') % Etiqueta del eje x
+ylabel('Cantidad') % Etiqueta del eje y
 
-figure
-bar(rango_vector(3:end),histogram_vector(3:end))
-title('Histograma de una imagen DICOM (sin los valores 0 y 1)')
-xlabel('Posición')
-ylabel('Cantidad')
+figure % Figura que muestra sin los valores 0 y 1
+bar(rango_vector(3:end),histogram_vector(3:end)) % Potear en modo barra
+title('Histograma de una imagen DICOM (sin los valores 0 y 1)') % Título
+xlabel('Posición') % Etiqueta del eje x
+ylabel('Cantidad') % Etiqueta del eje y
+
+toc
