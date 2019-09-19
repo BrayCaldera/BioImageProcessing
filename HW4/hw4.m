@@ -1,3 +1,8 @@
+% Brayan Daniel Caldera Rosas
+% Procesamiento de Bioimágenes
+% Histograma de una imagen DICOM
+% Tarea 4
+
 clc; clear all; close all;
 
 dicom_image = dicomread('image-000010.dcm');
@@ -22,3 +27,12 @@ end
 
 figure
 bar(rango_vector,histogram_vector)
+title('Histograma de una imagen DICOM')
+xlabel('Posición')
+ylabel('Cantidad')
+
+figure
+bar(rango_vector(3:end),histogram_vector(3:end))
+title('Histograma de una imagen DICOM (sin los valores 0 y 1)')
+xlabel('Posición')
+ylabel('Cantidad')
