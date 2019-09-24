@@ -16,12 +16,8 @@ rango_vector = linspace(0,double(M),double(M)+1);
 
 for i = 1:length(dicom_image) % Pixelwise operation
     for j = 1:length(dicom_image)
-        for x = 1:length(rango_vector) % Ciclo para contar los valores
-                                       % de cada pixel y guardarlos
-            if (dicom_image(i,j)==rango_vector(x))
-               histogram_vector(x)=histogram_vector(x)+1; 
-            end
-        end
+        V=double(dicom_image(i,j));
+        histogram_vector(V+1)=histogram_vector(V+1)+1;
     end
 end
 
