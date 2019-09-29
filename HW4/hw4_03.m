@@ -3,7 +3,7 @@
 % Histograma de una imagen DICOM
 % Tarea 4
 
-clc; clear all; close all;
+clc; clear; close all;
 
 tic
 
