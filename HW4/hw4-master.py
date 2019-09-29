@@ -1,7 +1,6 @@
 """Histogram in Python con OpenCv and matplotlib"""
 import cv2
 import matplotlib.pyplot as plt
-import numpy as np
 
 def rgbtogray(imagen):
     """Función para convertir una imagen rgb a black and white"""
