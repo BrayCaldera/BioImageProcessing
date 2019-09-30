@@ -41,5 +41,8 @@ if __name__=='__main__':
     img = cv2.imread('Images/'+image_name)
     cv2.imshow('image',img)
     image_gray = rgbtogray(img)
+    cv2.imwrite('Results/'+str(
+        input('¿Con cuál nombre quieres guardar la nueva imagen?: '))+
+        '.jpg', image_gray)
     cv2.imshow('image',image_gray)
     histogram(image_gray)
