@@ -1,0 +1,9 @@
+function a = ShowDicomSeries(Prefix, DataNumberRange)
+   figure(1)
+   for i=DataNumberRange
+       Filename = sprintf('%s%d.dcm',Prefix,i);
+       if exist(FileName, 'file') == 2
+           I = dicomr
+       end
+   end
+end

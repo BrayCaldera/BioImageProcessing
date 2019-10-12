@@ -17,6 +17,7 @@ def rgbtogray(imagen):
     return new_image
 
 def histogram(image):
+    """Funcion para hacer histogramas de una imagen"""
     vector_histogram = []
     for i in range(0, image.shape[0]):
         for j in range(0, image.shape[1]):
