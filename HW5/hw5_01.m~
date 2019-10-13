@@ -1,0 +1,7 @@
+% Brayan Daniel Caldera Rosas
+% Procesamiento de Bioimágenes
+% 
+% Tarea 5
+
+ShowDicomSeries('series-000000/image-',0:360)
+M

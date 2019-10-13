@@ -1,9 +1,16 @@
-function a = ShowDicomSeries(Prefix, DataNumberRange)
+function [] = ShowDicomSeries(Prefix, DataNumberRange)
    figure(1)
    for i=DataNumberRange
-       Filename = sprintf('%s%d.dcm',Prefix,i);
-       if exist(FileName, 'file') == 2
-           I = dicomr
+       Filename = sprintf('%s%06d.dcm',Prefix,i);
+       % Filename = (Prefix);
+       if exist(Filename, 'file') == 2
+           I = dicomread(Filename);
+           
+           % I = DinamicRange(I,0,255);
+           imshow((I),[]);
+           drawnow
+           disp(i);
+           %pause
        end
    end
 end

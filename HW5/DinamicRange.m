@@ -6,7 +6,7 @@ function O = DinamicRange(I,A,B)
     
     for i=1:m
         for j=1:n
-            V=I(i,j);
+            V=double(I(i,j));
             if (V>=A && V<=B)
                 NV=round((slope*V)+Interceptor);
             elseif (V>B)
