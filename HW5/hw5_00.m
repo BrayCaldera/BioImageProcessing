@@ -4,8 +4,8 @@
 % Tarea 5
 
 % clc; clear; close all;
-Prefix = 'image-00000';
-Filename = sprintf('%s%d.dcm',Prefix,1);
+Prefix = 'image-';
+Filename = sprintf('%s%06d.dcm',Prefix,178);
 % Filename = 'series-000000/image-000300.dcm';
 
 figure(1)
