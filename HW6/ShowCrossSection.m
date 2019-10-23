@@ -22,9 +22,6 @@ elseif(PlaneOrientationOption==3)
     Limit=m;
 end
 
-
-
-
 figure(1)
 
 for k=1:Limit
