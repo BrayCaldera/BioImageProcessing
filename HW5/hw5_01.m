@@ -7,6 +7,8 @@
 % Notes:
 % INTENSITY_COEF=0.11353517; % 255/max(value of a particular set of DICOM)
 
+ShowDicomSeries('series-000000/image-',178, 0, 255) % All
+
 % ShowDicomSeries('series-000000/image-',0:360, 0, 255) % All
 % ShowDicomSeries('series-000000/image-',0:360, 110, 132) % Kidneys %All pictures
 % ShowDicomSeries('series-000000/image-',178, 122, 126) % Kidneys %One picture
@@ -19,4 +21,4 @@
 % ShowDicomSeries('series-000000/image-',50, 135, 148) % Bones %One picture
 
 % ShowDicomSeries('series-000000/image-',0:360, 101, 147) % Spleen
- ShowDicomSeries('series-000000/image-',1, 122, 127) % Spleen %One picture
+% ShowDicomSeries('series-000000/image-',1, 122, 127) % Spleen %One picture
