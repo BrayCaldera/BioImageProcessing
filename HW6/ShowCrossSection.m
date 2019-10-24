@@ -6,7 +6,7 @@
 % 2 - Sagital
 % 3 - Coronal
 
-function ShowCrossSection(V,PlaneOrientationOption,PausedByUser)
+function ShowCrossSection(V,PlaneOrientationOption,PausedByUser,RangeInf,RangeSup)
 if(PlaneOrientationOption<1 || PlaneOrientationOption>3)
     disp('You must ose 1, 2 or 3 as PlaneOrientationOption')
     return;
@@ -38,7 +38,7 @@ for k=1:Limit
         I=reshape(I,n,NSlides);
         I=imrotate(I,-90);
     end
-    imshow((I),[1000 2000]);
+    imshow((I),[RangeInf RangeSup]);
     drawnow
     if(PausedByUser==1)
         pause;
