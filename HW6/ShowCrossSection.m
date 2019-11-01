@@ -38,7 +38,9 @@ for k=1:Limit
         I=reshape(I,n,NSlides);
         I=imrotate(I,-90);
     end
-    imshow((I),[RangeInf RangeSup]);
+    %imshow((I),[RangeInf RangeSup]);
+    imshow((I),[]);
+    colormap(jet)
     drawnow
     if(PausedByUser==1)
         pause;

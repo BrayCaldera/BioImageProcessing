@@ -5,13 +5,14 @@
 %% MAIN CODE
 %% BUILD
 tic
-V = BuildMedicalVolume('series-000000/image-',0:360);
+V = BuildMedicalVolume('Anonymized20191031/image-',0:22);
+% V = BuildMedicalVolume('series-000000/image-',0:360);
 % V1 = BuildMedicalVolume('series-000000/image-',178:180);
 toc
 %% SHOW
 tic
 
-%ShowCrossSection(V,1,false,968,1160) % Show Liver axial
+ShowCrossSection(V,1,false,968,1160) % Show Liver axial
 %ShowCrossSection(V,2,false,968,1160) % Show Liver Sagital
 %ShowCrossSection(V,3,false,968,1160) % Show Liver Coronal
 
