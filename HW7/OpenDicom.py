@@ -1,5 +1,3 @@
-#!/usr/bin/env python2
-# -*- coding: utf-8 -*-
 """
 Created on Tue Mar 26 09:23:39 2019
 
@@ -7,6 +5,8 @@ Created on Tue Mar 26 09:23:39 2019
 
 Modified on Fri Nov 01 07:37:15 2019
 by: DanCaldera
+
+For Python3.x
 """
 
 import os
