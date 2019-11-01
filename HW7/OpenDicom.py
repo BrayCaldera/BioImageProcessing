@@ -83,7 +83,7 @@ while CurrentFileToOpen<NFiles[0]:
         #print point
         pointCloud.addPoint(point)
    
-    # import pdb; pdb.set_trace()
+    import pdb; pdb.set_trace()
     dcm_sample=SegmetnedSkull#(ImageData/np.max(ImageData))
     cv2.imshow('sample image dicom',dcm_sample)
     cv2.waitKey(1);
